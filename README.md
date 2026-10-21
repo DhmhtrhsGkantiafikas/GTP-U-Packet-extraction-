@@ -1,4 +1,7 @@
 # GTP-U-Packet-extraction-
-this project basically solves the problem with GTP-U protocols and that wireshark  cant identify them without a plugin
+this project basically solves the problem with GTP-U protocols and tools like wireshark  cant identify them without a plugin
 
 Basically, when you work with GTP-U tunneling protocols,opening them in Wireshark shows raw unparsed bytes unless you manually configure user DLT tables, and L2 analysis tools fail to read the traffic properly. the solve i thought of that problem is that the GTP-U protocola has a fixed header, now without a plugin or anything, if i remove the header and add a pseudo ethernet header for wireshark to identify the packets, i could solve a problem wich at the time i made the code ( 2024) no one seemed to have posted a solution in the internet, at least not open source. i didnt published that code until today because it was used in a university project of my lab ( IthacaLab) in UOWM ECE, so now i got the okey to make it into my portofolio .
+
+
+If you use this code for research purposes Please reference my effort in doing this , i was so excited when doing this at 2nd year of Electrical and Computer Engineering School.
